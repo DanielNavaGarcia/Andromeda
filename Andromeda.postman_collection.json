@@ -1,0 +1,593 @@
+{
+	"info": {
+		"_postman_id": "fd941dfe-855d-443b-968e-5d26abd9bc28",
+		"name": "Andromeda",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Direcciones",
+			"item": [
+				{
+					"name": "obtenerTodasDirecciones",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/direcciones",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"direcciones"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "encontrarDireccion",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/direcciones/12",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"direcciones",
+								"12"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "guardarDireccion",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"estado\": \"Jalisco\",\r\n    \"ciudad\": \"Guadalajara\",\r\n    \"direccion\": \"Manuel M. Dieguez 118\",\r\n    \"codigo_postal\": 44600,\r\n    \"numero_interior\": \"01\",\r\n    \"numero_exterior\": \"33\",\r\n    \"informacion_adicional\": \"Sin indicaciones\",\r\n    \"nombre_destinatario\": \"Pedro\",\r\n    \"apellido_destinatario\": \"Torres\",\r\n    \"email_destinatario\": \"Torestores@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/direcciones",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"direcciones"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "eliminarDireccion",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/direcciones/12?id_direccion=12",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"direcciones",
+								"12"
+							],
+							"query": [
+								{
+									"key": "id_direccion",
+									"value": "12"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "FormasDePago",
+			"item": [
+				{
+					"name": "obtenerTodasFormasDePago",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/formas-de-pago",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"formas-de-pago"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "encontrarFormasDePago",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/formas-de-pago/12",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"formas-de-pago",
+								"12"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "guardarFormasDePago",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"tipo_tarjeta\": \"débito\",\r\n    \"numero_tarjeta\": 5359445160673326,\r\n    \"fecha_vencimiento\": 102031,\r\n    \"cvv\": 469\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/formas-de-pago",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"formas-de-pago"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "eliminarFormasDePago",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/formas-de-pago/12?id_forma_de_pago=12",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"formas-de-pago",
+								"12"
+							],
+							"query": [
+								{
+									"key": "id_forma_de_pago",
+									"value": "12"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "MetodosDeEnvio",
+			"item": [
+				{
+					"name": "obtenerTodosMetodosDeEnvio",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/metodos-de-envio",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"metodos-de-envio"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "encontrarMetodoDeEnvio",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/metodos-de-envio/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"metodos-de-envio",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Productos",
+			"item": [
+				{
+					"name": "obtenerTodosProductos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/productos",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"productos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "guardarProducto",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre_producto\": \"asdasdsdaasdasdasd\",\r\n    \"precio_producto\": 5000,\r\n    \"cantidad_producto\": 20,\r\n    \"descripcion_producto\": \"asdasdasdasddas\",\r\n    \"ruta_imagen_1\": \"asdasdasdsdaasdasd\",\r\n    \"ruta_imagen_2\": \"asdasdasdasd\",\r\n    \"ruta_imagen_3\": \"asdsdaasdsadasd\",\r\n    \"categoria\": \"Accesorios\",\r\n    \"descuento\": 0,\r\n    \"codigo_de_barras\": 321634587\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/productos",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"productos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "eliminarProducto",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/productos/24?id_producto=24",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"productos",
+								"24"
+							],
+							"query": [
+								{
+									"key": "id_producto",
+									"value": "24"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "encontrarProducto",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/productos/21",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"productos",
+								"21"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener todos los Accesorios",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/productos/search?categoria=Accesorios",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"productos",
+								"search"
+							],
+							"query": [
+								{
+									"key": "categoria",
+									"value": "Accesorios"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener todas las PC Gamer",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/productos/search?categoria=PC Gamer",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"productos",
+								"search"
+							],
+							"query": [
+								{
+									"key": "categoria",
+									"value": "PC Gamer"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Tickets",
+			"item": [
+				{
+					"name": "obtenerTodosTickets",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/tickets",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"tickets"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "guardarTicket",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"usuariosModel\": {\r\n        \"id_usuario\": 14\r\n    },\r\n    \"id_direccion_envio\": 7,\r\n    \"id_metodo_envio\": 3,\r\n    \"id_forma_de_pago\": 7,\r\n    \"estatus_del_pedido\": \"procesando\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/tickets",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"tickets"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "eliminarTicket",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "6",
+								"value": "",
+								"type": "default",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "localhost:8080/tickets/8",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"tickets",
+								"8"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "encontrarTicket",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/tickets/7",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"tickets",
+								"7"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Usuarios",
+			"item": [
+				{
+					"name": "Obtener todos los usuarios",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/usuarios",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"usuarios"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Borrar un usuario",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/usuarios/14",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"usuarios",
+								"14"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Guardar un usuario",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre_cliente\": \"Martha\",\r\n    \"apellido_cliente\": \"Martinez\",\r\n    \"correo\": \"Mar2tha@hotmail.com\",\r\n    \"contrasenia\": \"asdsdasddasfdfdfdsfsasdadasadsa\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/usuarios",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"usuarios"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "encontrarUsuario",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/usuarios/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"usuarios",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findByCorreoContaining Copy",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/usuarios/email/luis@hotmail.com",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"usuarios",
+								"email",
+								"luis@hotmail.com"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
